@@ -26,5 +26,8 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-03-01
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from the proprietary version
 include vendor/xiaomi/olivelite/BoardConfigVendor.mk

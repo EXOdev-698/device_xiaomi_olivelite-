@@ -9,6 +9,10 @@ include device/xiaomi/sdm439-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/olivelite
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_olivelite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_olivelite
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := olivelite
 

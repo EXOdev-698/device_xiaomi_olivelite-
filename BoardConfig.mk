@@ -16,6 +16,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_olivelite
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := olivelite
 
+# Kernel
+TARGET_KERNEL_CONFIG := olivelite-perf_defconfig
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
